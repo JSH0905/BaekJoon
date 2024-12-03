@@ -6,7 +6,7 @@ import sys
 N, M, B = map(int, sys.stdin.readline().split())
 
 ground = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
-answer = sys.maxsize
+answer = sys.maxsize # 최대로 큰 수
 idx = 0
 
 
@@ -26,4 +26,4 @@ for floor in range(257):
             answer = (exceed_block * 2) + lack_block
             idx = floor
 
-print(answer, idx)   
+print(answer, idx)    
