@@ -21,7 +21,7 @@ for i in range(len(hexagon)):
             max_height = hexagon[i][1]
             max_h_idx = i
 
-subW = abs(hexagon[(max_h_idx + 1) % 6][1] - hexagon[(max_h_idx - 1) % 6][1])
+subW = abs(hexagon[(max_h_idx + 1) % 6][1] - hexagon[(max_h_idx - 1) % 6][1]) # %6은 리스트 안의 원소를 원형으로 사용하기 위함.
 subH = abs(hexagon[(max_w_idx + 1) % 6][1] - hexagon[(max_w_idx - 1) % 6][1])
 
 print(melons * (max_width * max_height - subW * subH))

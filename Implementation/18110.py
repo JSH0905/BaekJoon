@@ -21,7 +21,7 @@ level = 0
 ex = new_round(n * 15 / 100)
 
 for _ in range(n):
-   op.append(int(sys.stdin.readline()))
+    op.append(int(sys.stdin.readline()))
 
 q.extend(sorted(op))
 
